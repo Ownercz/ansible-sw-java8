@@ -1,2 +1,2 @@
-# Hostname change
-Changes hostname if it doesn't correspond with hosts inventory.
+# Java 8 installation
+Installs Java 8 package.
