@@ -1,0 +1,12 @@
+- name: install java
+#  when: ansible_hostname != "app06.lipovcan.cz"
+  yum:
+    name: java-1.8.0-openjdk
+    state: present
+when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+- name: install java
+    #  when: ansible_hostname != "app06.lipovcan.cz"
+  apt:
+    name: java-1.8.0-openjdk
+    state: present
+when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
